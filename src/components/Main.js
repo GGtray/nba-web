@@ -18,6 +18,7 @@ class Main extends Component {
                 const playerInfo = Object.assign(info.commonPlayerInfo[0], info.playerHeadlineStats[0]);
                 console.log('playerInfo', playerInfo);
                 this.setState({ playerInfo });
+                console.log(1)
             })
             .catch((e) => console.log(e))
 
