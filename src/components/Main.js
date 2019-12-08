@@ -10,6 +10,7 @@ class Main extends Component {
 
     componentDidMount() {
         console.log('nba.stats --', nba.stats);
+        // something
 
         nba.stats.playerInfo({ PlayerID: this.state.playerId })
             .then((info) => {
