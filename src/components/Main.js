@@ -10,6 +10,7 @@ class Main extends Component {
 
     componentDidMount() {
         console.log('nba.stats --', nba.stats);
+        // something
 
         nba.stats.playerInfo({ PlayerID: this.state.playerId })
             .then((info) => {
@@ -17,6 +18,8 @@ class Main extends Component {
                 const playerInfo = Object.assign(info.commonPlayerInfo[0], info.playerHeadlineStats[0]);
                 console.log('playerInfo', playerInfo);
                 this.setState({ playerInfo });
+                console.log(1)
+                console.log(2)
             })
             .catch((e) => console.log(e))
 
