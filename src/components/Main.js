@@ -19,6 +19,7 @@ class Main extends Component {
                 console.log('playerInfo', playerInfo);
                 this.setState({ playerInfo });
                 console.log(1)
+                console.log(2)
             })
             .catch((e) => console.log(e))
 
